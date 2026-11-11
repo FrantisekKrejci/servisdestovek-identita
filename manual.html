@@ -40,6 +40,16 @@
     .note { color: #5c6b66; font-size: 13px; }
     .ban { background: #fff6e8; padding: 12px 14px; }
     code { font-family: Figtree, sans-serif; font-weight: 600; }
+    .scale { margin: 0 0 16px; }
+    .ends { display: flex; justify-content: space-between; font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: #5c6b66; }
+    .track { position: relative; height: 4px; margin: 12px 8px 6px; background: #e4dfd4; border-radius: 99px; }
+    .track i { position: absolute; top: 50%; width: 16px; height: 16px; border-radius: 50%; background: #2f6b4f; transform: translate(-50%, -50%); }
+    .adj { display: grid; grid-template-columns: 150px 1fr; gap: 4px 16px; align-items: center; margin: 10px 0; }
+    .adj strong { font-family: Fraunces, serif; font-size: 22px; font-weight: 620; }
+    .adj span { color: #5c6b66; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+    .meter { grid-column: 1 / -1; height: 4px; background: #e4dfd4; border-radius: 99px; }
+    .meter i { display: block; height: 4px; background: #2f6b4f; border-radius: 99px; }
+    .adj p { grid-column: 1 / -1; margin: 0 0 6px; }
     @media print {
       body { background: white; }
       section { break-inside: avoid; margin: 0 0 8mm; }
@@ -66,7 +76,7 @@
       <tr><th>Název</th><td>ServisDešťovek. Vždy takto, s velkým D uprostřed. Nikdy „Dešťovka servis“ — to je jiná firma.</td></tr>
       <tr><th>Doména</th><td>servisdestovek.cz</td></tr>
       <tr><th>Území</th><td>Morava a Slezsko, základna Ostrava.</td></tr>
-      <tr><th>Tón</th><td>Klidný, krátký, konkrétní. Žádné výkřiky, slevy v procentech ani „nejlepší na trhu“.</td></tr>
+      <tr><th>Tón</th><td>Klidný, krátký, konkrétní. Posuvníky, přídavná jména a archetyp jsou v kapitole Hlas.</td></tr>
     </table>
     <h3>Říkáme</h3>
     <p>nádrž, dešťová voda, filtr, čerpadlo, čistá voda, Morava a Slezsko.</p>
@@ -75,7 +85,81 @@
   </section>
 
   <section>
-    <p class="kicker">02 — Slogan</p>
+    <p class="kicker">02 — Hlas</p>
+    <h2>Jak mluví, kdyby to byl člověk</h2>
+    <p class="lead">Posuvník není nálada jedné kampaně. Je to místo, ze kterého se věta nemá hnout.</p>
+
+    <div class="scale">
+      <div class="ends"><span>Úřední</span><span>Hovorové</span></div>
+      <div class="track"><i style="left:28%"></i></div>
+      <p>Vyká. Věty jsou krátké a jdou rovnou k nádrži, zahradě a termínu. Nezní jako dopis z úřadu a ani jako kamarád z hospody.</p>
+    </div>
+    <div class="scale">
+      <div class="ends"><span>Vážné</span><span>Hravé</span></div>
+      <div class="track"><i style="left:16%"></i></div>
+      <p>Klid, bez vtipu na úkor vody. Legrace by z práce dělala legraci. To nechceme.</p>
+    </div>
+    <div class="scale">
+      <div class="ends"><span>Tiché</span><span>Hlasité</span></div>
+      <div class="track"><i style="left:10%"></i></div>
+      <p>Žádný vykřičník, žádná sleva v procentech, žádné „nejlepší na trhu“.</p>
+    </div>
+    <div class="scale">
+      <div class="ends"><span>Odborné</span><span>Lidské</span></div>
+      <div class="track"><i style="left:62%"></i></div>
+      <p>Řemeslo se neukazuje. Zákazník slyší, co z toho bude mít: čistou vodu, kterou už má. Postup, hodiny a nářadí do řeči nepatří.</p>
+    </div>
+    <div class="scale">
+      <div class="ends"><span>Skromné</span><span>Sebejisté</span></div>
+      <div class="track"><i style="left:58%"></i></div>
+      <p>Cenu řekne předem a neomlouvá se za ni. Nechlubí se, ale ani se nezmenšuje.</p>
+    </div>
+    <div class="scale">
+      <div class="ends"><span>Odkudkoli</span><span>Odsud</span></div>
+      <div class="track"><i style="left:86%"></i></div>
+      <p>Morava a Slezsko je součást věty, ne dovětek pod čarou.</p>
+    </div>
+
+    <h3>Pět přídavných jmen</h3>
+    <p>Kdyby firma stála v místnosti, řekli by o ní tohle. Číslo je jak moc to sedí, ne známka ze školy.</p>
+
+    <div class="adj">
+      <strong>Klidný</strong><span>5 z 5</span>
+      <div class="meter"><i style="width:100%"></i></div>
+      <p>Nezvyšuje hlas, ani když je nádrž dlouho zanedbaná. Tempo řeči je pomalé.</p>
+    </div>
+    <div class="adj">
+      <strong>Věcný</strong><span>5 z 5</span>
+      <div class="meter"><i style="width:100%"></i></div>
+      <p>Mluví o velikosti, přítocích, termínu a ceně. Nepřidává příběh navíc.</p>
+    </div>
+    <div class="adj">
+      <strong>Spolehlivý</strong><span>5 z 5</span>
+      <div class="meter"><i style="width:100%"></i></div>
+      <p>Přijede, jak je domluveno, a odejde, když je voda zase použitelná. Nic mezi tím neslibuje.</p>
+    </div>
+    <div class="adj">
+      <strong>Šetrný</strong><span>4 z 5</span>
+      <div class="meter"><i style="width:80%"></i></div>
+      <p>K zahradě i k větě. Není to „jsme levní“. Je to „na trávník nepřijede cisterna“.</p>
+    </div>
+    <div class="adj">
+      <strong>Mlčenlivý</strong><span>4 z 5</span>
+      <div class="meter"><i style="width:80%"></i></div>
+      <p>Práci nepopisuje a nefotí se u ní. Řekne výsledek a zbytek si nechá.</p>
+    </div>
+
+    <h3>Archetyp</h3>
+    <div class="slogan">
+      <span class="note">Tak by se označila sama. Jedno slovo, ne směs.</span>
+      <strong>Pečovatel</strong>
+    </div>
+    <p>Stará se o věc, kterou dům už má. Nepřichází zachraňovat a neukazuje, jak je zásah náročný. Když jedno slovo nestačí, druhé je Mudrc: ví, co s nádrží je, řekne cenu a nejde do přednášky.</p>
+    <p>Vládce ne. Nikomu nevládne a nestaví se nad zákazníka. Kouzelník ne. Kouzlo by bylo předvádět postup a slibovat proměnu. Hrdina, rebel ani klaun taky ne. Tady se nic nevyhrává a nikdo se nesměje na kameru.</p>
+  </section>
+
+  <section>
+    <p class="kicker">03 — Slogan</p>
     <h2>Dvě věty, dvě role</h2>
     <div class="slogan">
       <span class="note">Umělecký. Na titul, obálku, úvod sítě.</span>
@@ -89,7 +173,7 @@
   </section>
 
   <section>
-    <p class="kicker">03 — Logo</p>
+    <p class="kicker">04 — Logo</p>
     <h2>Tři podoby</h2>
     <p>Značka je kapka jedním tahem. Text je jméno. Dohromady jsou první volba. Samotná kapka je na profil, favicon a malé plochy. Samotný text jen tam, kde se značka nevejde.</p>
     <figure>
@@ -128,7 +212,7 @@
   </section>
 
   <section>
-    <p class="kicker">04 — Barvy</p>
+    <p class="kicker">05 — Barvy</p>
     <h2>Šest barev, dvě nosné</h2>
     <p>Nosné jsou inkoust a zeleň. Krém je podklad. Mech je jen linka na tmavé ploše a jemný doplněk. Červená z webu do značky nepatří, je jen pro chybu ve formuláři.</p>
     <img class="wide" src="site/barvy.png" alt="Vzorník barev" />
@@ -144,7 +228,7 @@
   </section>
 
   <section>
-    <p class="kicker">05 — Písmo</p>
+    <p class="kicker">06 — Písmo</p>
     <h2>Fraunces a Figtree</h2>
     <p>Jméno, titulky a slogany jsou Fraunces. Všechno ostatní je Figtree. Třetí písmo se nezavádí.</p>
     <p style="font-family:Fraunces,serif;font-size:42px;line-height:1.1;margin:12px 0;">Čistá voda, kterou už máte.</p>
@@ -158,7 +242,7 @@
   </section>
 
   <section>
-    <p class="kicker">06 — Obraz</p>
+    <p class="kicker">07 — Obraz</p>
     <h2>Co se fotí</h2>
     <p>Zahrada po dešti, poklop nádrže v trávě nebo ve štěrku, čistá voda, jedna kapka. Světlo je zatažené, barvy tlumené, nikdo se nedívá do objektivu. Žádné bahno, hadice v akci, montérky v detailu ani úsměv s palcem nahoru.</p>
     <div class="pair">
@@ -185,7 +269,7 @@
   </section>
 
   <section>
-    <p class="kicker">07 — Sítě</p>
+    <p class="kicker">08 — Sítě</p>
     <h2>Jedno jméno všude</h2>
     <table>
       <tr><th>Jméno profilu</th><td>ServisDešťovek</td></tr>
@@ -222,7 +306,7 @@
   </section>
 
   <section>
-    <p class="kicker">08 — Soubory</p>
+    <p class="kicker">09 — Soubory</p>
     <h2>Co je v balíku</h2>
     <table>
       <tr><th>manual.html</th><td>Tento manuál. Otevře se v prohlížeči, písma bere ze složky fonts.</td></tr>
