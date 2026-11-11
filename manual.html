@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <title>ServisDešťovek — manuál identity</title>
+  <style>
+    @font-face { font-family: Fraunces; src: url("fonts/Fraunces-Display.ttf") format("truetype"); font-weight: 620; }
+    @font-face { font-family: Figtree; src: url("fonts/Figtree-Regular.ttf") format("truetype"); font-weight: 400; }
+    @font-face { font-family: Figtree; src: url("fonts/Figtree-Semibold.ttf") format("truetype"); font-weight: 600; }
+    @page { size: A4; margin: 14mm 14mm 16mm; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #e7e2d8; color: #1c2420; font-family: Figtree, sans-serif; font-size: 14px; line-height: 1.5; }
+    main { max-width: 900px; margin: 0 auto; }
+    section { background: #faf7f2; padding: 28px 32px 32px; margin: 18px 0; }
+    h1, h2, h3 { font-family: Fraunces, serif; font-weight: 620; letter-spacing: -0.03em; line-height: 1.05; margin: 0; }
+    h1 { font-size: 64px; }
+    h2 { font-size: 32px; margin-bottom: 10px; }
+    h3 { font-size: 22px; margin: 18px 0 6px; }
+    p { margin: 0 0 10px; }
+    .kicker { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #2f6b4f; font-weight: 600; margin: 0 0 12px; }
+    .lead { font-size: 18px; max-width: 38em; }
+    .cover { background: #10232e; color: #f4efe6; padding: 0; overflow: hidden; }
+    .cover img { width: 100%; height: 280px; object-fit: cover; display: block; }
+    .cover div { padding: 28px 32px 36px; }
+    .cover h1 { color: #f4efe6; }
+    .cover p { color: #c5d5b8; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; vertical-align: top; padding: 8px 12px 8px 0; border-bottom: 1px solid #e4dfd4; }
+    th { width: 30%; color: #5c6b66; font-weight: 600; }
+    figure { margin: 14px 0; }
+    img.wide { width: 100%; height: auto; display: block; }
+    figcaption { font-size: 12px; color: #5c6b66; margin-top: 6px; }
+    .pair { display: grid; grid-template-columns: 1.4fr 0.8fr; gap: 12px; }
+    .swatch { display: grid; grid-template-columns: 72px 1fr; gap: 12px; align-items: center; margin: 8px 0; }
+    .chip { height: 56px; }
+    ul { margin: 6px 0 12px; padding-left: 18px; }
+    li { margin: 3px 0; }
+    .slogan { background: #f4efe6; padding: 16px 18px; margin: 8px 0 12px; }
+    .slogan strong { font-family: Fraunces, serif; font-size: 26px; display: block; margin-top: 4px; }
+    .note { color: #5c6b66; font-size: 13px; }
+    .ban { background: #fff6e8; padding: 12px 14px; }
+    code { font-family: Figtree, sans-serif; font-weight: 600; }
+    @media print {
+      body { background: white; }
+      section { break-inside: avoid; margin: 0 0 8mm; }
+      .cover { break-after: page; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <section class="cover">
+    <img src="foto/sachtice.jpg" alt="Poklop nádrže v zahradě" />
+    <div>
+      <p class="kicker">Manuál identity</p>
+      <h1>ServisDešťovek</h1>
+      <p>Čištění nádrží na dešťovou vodu. Morava a Slezsko.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">01 — Značka</p>
+    <h2>O kom to je</h2>
+    <p class="lead">ServisDešťovek čistí podzemní nádrž, filtry a čerpadlo. Zákazník už vodu má. My ji vrátíme do stavu, ve kterém ji zahrada a dům znovu použijí.</p>
+    <table>
+      <tr><th>Název</th><td>ServisDešťovek. Vždy takto, s velkým D uprostřed. Nikdy „Dešťovka servis“ — to je jiná firma.</td></tr>
+      <tr><th>Doména</th><td>servisdestovek.cz</td></tr>
+      <tr><th>Území</th><td>Morava a Slezsko, základna Ostrava.</td></tr>
+      <tr><th>Tón</th><td>Klidný, krátký, konkrétní. Žádné výkřiky, slevy v procentech ani „nejlepší na trhu“.</td></tr>
+    </table>
+    <h3>Říkáme</h3>
+    <p>nádrž, dešťová voda, filtr, čerpadlo, čistá voda, Morava a Slezsko.</p>
+    <h3>Neříkáme</h3>
+    <p>kal, fekálie, špína, „jak to děláme krok za krokem“, před a po s bahnem. Práce se zákazníkovi neukazuje. Ukazuje se výsledek: voda, zahrada, poklop, klid.</p>
+  </section>
+
+  <section>
+    <p class="kicker">02 — Slogan</p>
+    <h2>Dvě věty, dvě role</h2>
+    <div class="slogan">
+      <span class="note">Umělecký. Na titul, obálku, úvod sítě.</span>
+      <strong>Čistá voda, kterou už máte.</strong>
+    </div>
+    <div class="slogan">
+      <span class="note">Faktický. Pod umělecký slogan, do bio, do inzerátu.</span>
+      <strong>Vyčistíme nádrž, filtry i čerpadlo.</strong>
+    </div>
+    <p>Nepřidává se třetí slogan. Když je málo místa, zůstane jen umělecký a doména.</p>
+  </section>
+
+  <section>
+    <p class="kicker">03 — Logo</p>
+    <h2>Tři podoby</h2>
+    <p>Značka je kapka jedním tahem. Text je jméno. Dohromady jsou první volba. Samotná kapka je na profil, favicon a malé plochy. Samotný text jen tam, kde se značka nevejde.</p>
+    <figure>
+      <img class="wide" src="logo/kombinovane-barva.png" alt="Kombinované logo" />
+      <figcaption>Primární. logo/kombinovane-barva.svg — krém, zeleň, inkoust.</figcaption>
+    </figure>
+    <div class="pair">
+      <figure>
+        <img class="wide" src="logo/kombinovane-cb.png" alt="Černobílé logo" />
+        <figcaption>Jedna barva, značka jen obrys. Razítko, výšivka, černobílý tisk. logo/kombinovane-cb.svg</figcaption>
+      </figure>
+      <figure>
+        <img class="wide" src="logo/znacka-barva.png" alt="Grafická značka" />
+        <figcaption>Samotná značka. logo/znacka-barva.svg a znacka-cb.svg</figcaption>
+      </figure>
+    </div>
+    <figure>
+      <img class="wide" src="logo/kombinovane-tmave.png" alt="Logo na tmavém podkladu" />
+      <figcaption>Na inkoustovém podkladu je kapka jen linka v mechu, text krémový. logo/kombinovane-tmave.svg</figcaption>
+    </figure>
+    <h3>Ochranná zóna a velikost</h3>
+    <p>Kolem loga nechávejte prázdno aspoň o šířce kapky. Do zóny nepatří text, fotka ani okraj formátu. Kombinované logo nepoužívejte užší než 140 px na obrazovce a 32 mm v tisku. Samotná kapka ne pod 24 px.</p>
+    <h3>Podklady</h3>
+    <ul>
+      <li>Krém <code>#F4EFE6</code>, bílý papír, inkoust <code>#10232E</code>.</li>
+      <li>Na fotografii jen přes souvislý pruh v krému nebo inkoustu. Kapka se nepokládá přímo do trávy.</li>
+    </ul>
+    <h3>Co se nedělá</h3>
+    <ul>
+      <li>Neměnit barvy, nepřidávat stín, obrys, přechod ani otáčení.</li>
+      <li>Nedeformovat. Když se nevejde, použije se kratší verze, ne zúžená.</li>
+      <li>Nepřepisovat jméno na verzálky ani na „Dešťovka servis“.</li>
+      <li>Nedávat kapku do kruhu, erbu ani na cizí ikonu.</li>
+    </ul>
+    <p class="note">Průhledné verze pro skládání jsou soubory s příponou <code>-pruhledne.png</code>.</p>
+  </section>
+
+  <section>
+    <p class="kicker">04 — Barvy</p>
+    <h2>Šest barev, dvě nosné</h2>
+    <p>Nosné jsou inkoust a zeleň. Krém je podklad. Mech je jen linka na tmavé ploše a jemný doplněk. Červená z webu do značky nepatří, je jen pro chybu ve formuláři.</p>
+    <img class="wide" src="site/barvy.png" alt="Vzorník barev" />
+    <table>
+      <tr><th>Inkoust</th><td>#10232E · RGB 16, 35, 46 · tisk cca CMYK 65, 24, 0, 82. Podklad, text na krému se píše spíš barvou Text.</td></tr>
+      <tr><th>Zeleň</th><td>#2F6B4F · RGB 47, 107, 79 · CMYK 56, 0, 26, 58. Kapka, odkazy, koncovka .cz.</td></tr>
+      <tr><th>Mech</th><td>#C5D5B8 · RGB 197, 213, 184 · CMYK 7, 0, 14, 17. Linka loga na inkoustu, druhý řádek na fotce.</td></tr>
+      <tr><th>Krém</th><td>#F4EFE6 · RGB 244, 239, 230. Hlavní podklad loga a karet.</td></tr>
+      <tr><th>Papír</th><td>#FAF7F2 · RGB 250, 247, 242. Pozadí stránky, o odstín světlejší než krém.</td></tr>
+      <tr><th>Text</th><td>#1C2420 · RGB 28, 36, 32. Běžné odstavce.</td></tr>
+    </table>
+    <p class="note">CMYK je přepočet pro orientaci tiskárny, ne nátisk. Na látku a razítko se bere černá obrysová verze.</p>
+  </section>
+
+  <section>
+    <p class="kicker">05 — Písmo</p>
+    <h2>Fraunces a Figtree</h2>
+    <p>Jméno, titulky a slogany jsou Fraunces. Všechno ostatní je Figtree. Třetí písmo se nezavádí.</p>
+    <p style="font-family:Fraunces,serif;font-size:42px;line-height:1.1;margin:12px 0;">Čistá voda, kterou už máte.</p>
+    <p style="font-size:18px;">Vyčistíme nádrž, filtry i čerpadlo. Morava a Slezsko.</p>
+    <table>
+      <tr><th>Fraunces</th><td>Názvy a velké věty. V logu je řez odpovídající váze 620, měkký, bez ozdobného wonk. Na webu se bere z Google Fonts, soubor je <code>fonts/Fraunces-Display.ttf</code>.</td></tr>
+      <tr><th>Figtree</th><td>Text, tlačítka, bio, popisky. Regular na odstavce, Semibold na krátké štítky. <code>fonts/Figtree-Regular.ttf</code> a <code>Figtree-Semibold.ttf</code>.</td></tr>
+      <tr><th>Na webu</th><td>Stejná dvojice. Nadpisy Fraunces, rozhraní Figtree. Čísla faktur můžou zůstat v IBM Plex Mono, do plakátu se nepřenáší.</td></tr>
+    </table>
+    <p class="note">Obě rodiny jsou volně k užití (SIL Open Font License). Ke stažení i na fonts.google.com, vzory Fraunces a Figtree.</p>
+  </section>
+
+  <section>
+    <p class="kicker">06 — Obraz</p>
+    <h2>Co se fotí</h2>
+    <p>Zahrada po dešti, poklop nádrže v trávě nebo ve štěrku, čistá voda, jedna kapka. Světlo je zatažené, barvy tlumené, nikdo se nedívá do objektivu. Žádné bahno, hadice v akci, montérky v detailu ani úsměv s palcem nahoru.</p>
+    <div class="pair">
+      <figure>
+        <img class="wide" src="foto/sachtice.jpg" alt="Šachtice u cesty" />
+        <figcaption>foto/sachtice.jpg — široký záběr, obálky a cover.</figcaption>
+      </figure>
+      <figure>
+        <img class="wide" src="foto/voda.jpg" alt="Proud vody do mísy" />
+        <figcaption>foto/voda.jpg — detail vody.</figcaption>
+      </figure>
+    </div>
+    <div class="pair">
+      <figure>
+        <img class="wide" src="foto/zahrada.jpg" alt="Poklop v trávníku" />
+        <figcaption>foto/zahrada.jpg</figcaption>
+      </figure>
+      <figure>
+        <img class="wide" src="foto/kapka.jpg" alt="Kapka na listu" />
+        <figcaption>foto/kapka.jpg — story a velké plochy.</figcaption>
+      </figure>
+    </div>
+    <p>Na fotku se logo dává jen do pruhu. Titulek je krátký, maximálně dva řádky Fraunces. Když věta nestačí, patří tam faktický slogan, ne odstavec.</p>
+  </section>
+
+  <section>
+    <p class="kicker">07 — Sítě</p>
+    <h2>Jedno jméno všude</h2>
+    <table>
+      <tr><th>Jméno profilu</th><td>ServisDešťovek</td></tr>
+      <tr><th>Handle</th><td>servisdestovek</td></tr>
+      <tr><th>Odkaz</th><td>https://servisdestovek.cz</td></tr>
+      <tr><th>Bio</th><td>Čištění nádrží na dešťovou vodu.<br>Nádrž, filtry i čerpadlo.<br>Morava a Slezsko.</td></tr>
+      <tr><th>Profilová fotka</th><td>Jen kapka na zeleni. site/profil-1080.png</td></tr>
+    </table>
+    <figure>
+      <img class="wide" src="site/instagram-prispevek-umelecky.jpg" alt="Příspěvek se sloganem" />
+      <figcaption>Instagram a Facebook, čtverec 1080×1080. Umělecký slogan. site/instagram-prispevek-umelecky.jpg</figcaption>
+    </figure>
+    <figure>
+      <img class="wide" src="site/instagram-prispevek-fakticky.jpg" alt="Příspěvek s faktickým sloganem" />
+      <figcaption>Stejný formát, faktický slogan na inkoustu. site/instagram-prispevek-fakticky.jpg</figcaption>
+    </figure>
+    <figure>
+      <img class="wide" src="site/instagram-prispevek-typografie.jpg" alt="Příspěvek bez fotky" />
+      <figcaption>Když není nová fotka. site/instagram-prispevek-typografie.jpg</figcaption>
+    </figure>
+    <figure>
+      <img class="wide" src="site/instagram-story-1080x1920.jpg" alt="Story" />
+      <figcaption>Story 1080×1920. site/instagram-story-1080x1920.jpg</figcaption>
+    </figure>
+    <figure>
+      <img class="wide" src="site/facebook-cover-1640x624.jpg" alt="Facebook cover" />
+      <figcaption>Facebook cover 1640×624. site/facebook-cover-1640x624.jpg</figcaption>
+    </figure>
+    <figure>
+      <img class="wide" src="site/linkedin-cover-1584x396.jpg" alt="LinkedIn cover" />
+      <figcaption>LinkedIn cover 1584×396. site/linkedin-cover-1584x396.jpg</figcaption>
+    </figure>
+    <p>Popisek pod příspěvkem je jedna nebo dvě věty. První je slogan, druhá je území nebo doména. Hashtagy nanejvýš tři: #destovavoda #nadrz #servisdestovek. Bez výčtu práce a bez ceníku v obrázku.</p>
+  </section>
+
+  <section>
+    <p class="kicker">08 — Soubory</p>
+    <h2>Co je v balíku</h2>
+    <table>
+      <tr><th>manual.html</th><td>Tento manuál. Otevře se v prohlížeči, písma bere ze složky fonts.</td></tr>
+      <tr><th>logo/</th><td>SVG a PNG. Barva, černobílá, tmavá, favicon, průhledné verze.</td></tr>
+      <tr><th>site/</th><td>Profil, příspěvky, story, covery, vzorník.</td></tr>
+      <tr><th>foto/</th><td>Čtyři předlohy obrazu.</td></tr>
+      <tr><th>fonts/</th><td>Fraunces a Figtree k instalaci.</td></tr>
+    </table>
+    <p class="ban">Jméno ServisDešťovek s.r.o. v ARES k 11. 11. 2026 nebylo. Aktivní je ale Dešťovka servis s.r.o., IČO 09568450. Před zápisem nechat název posoudit. Záložní firma se stejnou značkou navenku: ServisDešťovek Morava s.r.o.</p>
+  </section>
+</main>
+</body>
+</html>
